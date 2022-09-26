@@ -1,0 +1,25 @@
+.main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pieski{
+    width:450px;
+    height:300px;
+    margin-bottom:16px
+}
+.yes{
+margin-top:30px;
+width:70px;
+background:hotpink}
+
+.footer{
+    padding:16px;
+  
+}
+.test{
+    width:80%;
+    height:200px;
+}

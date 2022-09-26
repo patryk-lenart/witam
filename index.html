@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propozycja</title>
+    <link href="style.css"rel="stylesheet" type="text/css">
+    <script src="main.js" defer></script>
+</head>
+<body class="body">
+    <main class="main">
+<h1>Hej co ty na to żeby się któregoś dnia spotkać i coś porobić?</h1>
+<img class="pieski" src="pieski.jfif">
+<div class="buttons">
+<button onmouseover="run()" style="position:absolute; width:70px; background:hotpink" id="btn">Spadaj</button>
+<button class="yes">Jasne!</button>
+</div>
+<script>
+    function run(){
+        let btn = document.getElementById("btn");
+        //console.log(btn);
+        let r = Math.random() // <0,1> ->
+        r *=window.innerHeight;
+        r=Math.round(r);
+        r -= btn.clientHeight;
+        let top = r.toString() +"px";
+        btn.style.top = top;
+
+        r =  Math.random() // <0,1> ->
+        r *=window.innerWidth;
+        r=Math.round(r);
+        r -= btn.clientWidth;
+        let left = r.toString() +"px";
+        btn.style.left = left;
+        console.log("najechałaś na guzik")
+
+
+    }
+</script>
+<footer class="footer">Pozdrawiam - Patryk</footer>
+<img class="test" src="zośka.jpg">
+    </main>
+</body>
+</html>
